@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pizzeria - Contact</title>
+		<meta charset="utf-8">
+	</head>
+	<form action="/send_contact" method="post">
+		<div>
+			<label for="nom">Nom :</label>
+			<input type="text" id="nom" name="nom_utilisateur">
+		</div>
+		<div>
+			<label for="prenom">Prenom :</label>
+			<input type="text" id="prenom" name="prenom_utilisateur">
+		</div>
+		<div>
+			<label for="email">e-mail:</label>
+			<input type="email" id="email" name="email_utilisateur">
+		</div>    
+		<div>
+			<label for="telephone">Numéro de téléphone :</label>
+			<input type="telephone" id="telephone" name="telephone_utilisateur">
+			</div>
+		<div>
+			<label for="canalprefere">Canal de contact préféré</label>
+			<select name="canalprefere" id="canalprefere">
+				<option value="">--Choisir contact préféré--</option>
+				<option value="email">Email</option>
+				<option value="telephone">Téléphone</option>
+			</select>
+		</div>
+		<div>
+			<label for="message">Message :</label>
+			<textarea id="message" name="message_utilisateur"></textarea>
+		</div>
+	</form>
+</html>
